@@ -1,0 +1,26 @@
+@import "../../static/css/config/const.less";
+.indexhead{
+  width: 100%;
+  height: @indexHeaderH;
+  line-height: @indexHeaderH;
+  color: @indexHeaderColor;
+  font-size: @indexHeaderFonrsize;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 @padding;
+  position: fixed;
+  background-color: @indexHeaderbg;
+  transition: all 0.5s;
+  z-index: 99999999;
+  top:0;
+  div:not(:nth-child(2)){
+    height: @indexHeaderH;
+    width: 0.4rem;
+  }
+  a{
+    color: #fff;
+  }
+  .top-btn{
+    cursor: pointer;
+  }
+}

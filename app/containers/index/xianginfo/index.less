@@ -1,0 +1,49 @@
+@import "../../../static/css/config/const";
+.information{
+  width: 100%;
+  padding: 0 @padding;
+
+}
+.information .content{
+  height: 2.9rem;
+  width: 100%;
+  border-bottom: 0.01rem solid rgba(255,255,255,0.6);
+}
+.information .content .left{
+  height: 100%;
+  width: 45%;
+  font-size: 3rem;
+  color: #ffffff;
+  line-height: 2.9rem;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information .content .left>img{
+  max-width: 80%;
+}
+.information .content .right{
+  height: 100%;
+  width: 55%;
+  font-size: 0.5rem;
+  color: #ffffff;
+  float: right;
+}
+.information .content .right>li{
+  font-size: 0.2rem;
+  width: 100%;
+  height: 25%;
+  border-bottom:0.01rem dashed rgba(255,255,255,0.6);
+  line-height: 0.7rem;
+}
+.information .content .right>li:last-child{
+  border: none;
+}
+.information .content .right>li span:first-child{
+  float: left;
+}
+.information .content .right>li span:last-child{
+  float: right;
+}

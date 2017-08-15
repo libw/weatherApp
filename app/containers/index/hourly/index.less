@@ -1,0 +1,19 @@
+@import "../../../static/css/config/const";
+.hour-box{
+  width: 100%;
+  padding:0 @padding;
+  .hour-list-box{
+    width: 100%;
+    height: @hourH;
+    border-bottom: 0.01rem dashed #fff;
+    font-size: @hourFontsize;
+    text-align: center;
+    color: @hourColor;
+    display: flex;
+    justify-content: space-between;
+    .hour-list{
+      flex-shrink: 0;
+      height: @hourH;
+    }
+  }
+}

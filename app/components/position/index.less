@@ -1,0 +1,96 @@
+@import "../../static/css/config/const";
+.pos-box{
+  padding: 0 @padding;
+  position: relative;
+}
+.mask{
+  width: 100%;height: 100%;
+  background: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.position-auto{
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  line-height: 0.9rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.34rem;
+  font-weight: 600;
+  .left{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .icon{
+      width: 0.6rem;
+      height: 100%;
+      margin-right: 0.4rem;
+      margin-left: 0.4rem;
+      padding-top: 0.1rem;
+      img{
+        max-width: 100%;
+      }
+    }
+    .cityname{
+      width: auto;
+      height: 100%;
+    }
+    .citypos{
+      display: none;
+      margin-left:1.4rem;
+    }
+  }
+  .right{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pos-icon{
+      width: 0.6rem;
+      height:1rem;
+      display: flex;
+      align-items: center;
+      padding: 0.1rem;
+      margin-right: 0.1rem;
+      position: absolute;
+      right:1.2rem;left:auto;
+      img{
+        max-width: 100%;
+      }
+    }
+    .pos-btn{
+      width: 0.7rem;
+      height: 0.36rem;
+      border-radius: 30px;
+      background: #4ad002;
+      margin-right: 0.2rem;
+      position: relative;
+      .circle{
+        display: block;
+        position: absolute;
+        right: 0px;
+        height: 0.36rem;
+        width: 0.36rem;
+        border-radius: 50%;
+        background: #fff;
+        transition: all 0.5s;
+      }
+    }
+    .crumbs{
+      width: 0.6rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0.1rem;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}
